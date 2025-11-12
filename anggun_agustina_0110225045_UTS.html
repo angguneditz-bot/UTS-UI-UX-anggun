@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Cari Sivitas Akademika</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 15px;
+            width: 320px;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        label {
+            display: inline-block;
+            width: 130px;
+            vertical-align: top;
+            margin-top: 6px;
+        }
+        input[type="text"], input[type="file"] {
+            width: 160px;
+            padding: 6px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 15px;
+        }
+        .search-box {
+            float: right;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">Cari Sivitas Akademika
+        <input type="search" placeholder="Search" class="search-box">
+    </div>
+    
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nama">Nama Lengkap :</label>
+        <input type="text" id="nama" name="nama" value="Nama Mahasiswa / Dosen"><br>
+
+        <label for="prodi">Asal Prodi :</label>
+        <input type="text" id="prodi" name="prodi" placeholder="Asal Prodi"><br>
+
+        <label for="status">Status :</label>
+        <input type="text" id="status" name="status" placeholder="Mahasiswa / Dosen"><br>
+
+        <label>Jenis Kendaraan :</label>
+        <div class="radio-group">
+            <input type="radio" id="motor" name="jenis_kendaraan" value="motor" checked>
+            <label for="motor">Motor</label>
+            <input type="radio" id="mobil" name="jenis_kendaraan" value="mobil">
+            <label for="mobil">Mobil</label>
+        </div>
+
+        <label for="nopol">NoPol :</label>
+        <input type="text" id="nopol" name="nopol" placeholder="Nomor Polisi"><br>
+
+        <label for="merk">Merk :</label>
+        <input type="text" id="merk" name="merk" placeholder="Merk Kendaraan"><br>
+
+        <label for="upload">Upload STNK :</label>
+        <input type="file" id="upload" name="upload"><br>
+        
+        <button type="submit">Daftar</button>
+    </form>
+</div>
+
+</body>
+</html>
